@@ -13,6 +13,7 @@ class MP3Importer
     Dir.entries(@path).reject { |f| File.directory?(f) }
   end
 
+  # imports the files into the library by creating songs from a filename
   def import
 
   end
