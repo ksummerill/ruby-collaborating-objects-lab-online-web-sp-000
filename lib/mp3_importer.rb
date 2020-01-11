@@ -9,6 +9,7 @@ class MP3Importer
   # loads all the mp3 files in the path directory
   # normalizes the filename to just the mp3 filename with no path
   def files
+    binding.pry
     Dir.entries(@path)
   end
 
