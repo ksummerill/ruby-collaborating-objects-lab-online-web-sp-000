@@ -10,7 +10,7 @@ class MP3Importer
   # normalizes the filename to just the mp3 filename with no path
   def files
     # binding.pry
-    Dir.entries(@path).select { |f| File.file?(f) }
+    Dir.entries(@path).select { |f| f.file? }
   end
 
   def import
